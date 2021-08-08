@@ -81,3 +81,25 @@ button{
     padding: 3rem;
     filter: brightness(0.9);
 }
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.menu-items img{
+    padding: 0px 2rem 0px 2rem;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.desc{
+    padding: 2rem;
+}
