@@ -103,3 +103,8 @@ button{
 .desc{
     padding: 2rem;
 }
+
+.contact{
+    line-height: 5rem;
+    text-align: left;
+}
