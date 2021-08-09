@@ -57,7 +57,7 @@ nav{
     transform: translateY(-10%);
 }
 
-.nav-bar:active{
+.nav-bar.active{
     border-bottom: 2px solid white;
 }
 

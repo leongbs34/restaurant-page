@@ -26,9 +26,24 @@ function createNavBar(){
     nav.appendChild(btnMenu);
     nav.appendChild(btnContact);
 
-    btnHome.addEventListener('click', loadHome);
-    btnMenu.addEventListener('click', loadMenu);
-    btnContact.addEventListener('click', loadContact);
+    btnHome.addEventListener('click', () => {
+        btnMenu.classList.remove('active');
+        btnContact.classList.remove('active');
+        loadHome();
+        btnHome.classList.add('active');
+    });
+    btnMenu.addEventListener('click', () => {
+        btnHome.classList.remove('active');
+        btnContact.classList.remove('active');
+        loadMenu();
+        btnMenu.classList.add('active');
+    });
+    btnContact.addEventListener('click', () => {
+        btnHome.classList.remove('active');
+        btnMenu.classList.remove('active');
+        loadContact();
+        btnContact.classList.add('active');
+    });
 
     return nav;
 }
